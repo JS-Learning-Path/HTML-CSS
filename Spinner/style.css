@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.spinner{
+    width: 70px;
+    height: 70px;
+    color:red;
+    border: red 5px solid;
+    border-top-color: transparent;
+    border-left-color: green;
+    border-right-color: black;
+    border-radius: 50%;
+    animation:spin 3s linear infinite;
+}
+@keyframes spin {
+from{
+    transform:rotate(0deg);
+}
+to{
+    transform:rotate(360deg);
+}
+}
