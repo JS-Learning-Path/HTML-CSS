@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Responsive Registration Form with HTML and CSS</title>
+</head>
+
+<body>
+  <section class="container">
+    <header>
+      <h1>Responsive Registration Form</h1>
+    </header>
+    <form action="#">
+      <div class="input-group">
+        <label>Full name</label>
+        <input type="text" placeholder="Enter your full name" required />
+      </div>
+      <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required />
+      </div>
+      <div class="columns">
+        <div class="input-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter your phone number" required />
+        </div>
+        <div class="input-group">
+          <label>Birth date</label>
+          <input type="date" placeholder="Enter your birthdate" required />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h4>Gender :</h4>
+        <div class="gender-option">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div class="gender-option">
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <div class="gender-option">
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="adresses">
+        <label>Address</label>
+        <input type="text" placeholder="Enter your Country" required />
+        <input type="text" placeholder="Enter your address" required />
+        <input type="text" placeholder="Enter your State" required />
+        <input type="text" placeholder="Enter your City" required />
+        <input type="text" placeholder="Enter your Zip Code" required />
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>

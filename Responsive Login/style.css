@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(130, 106, 240);
+  padding: 20px;
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  /* outline: 1px solid red; */
+}
+
+.container .from {
+  margin-top: 30px;
+}
+
+.container .input-group {
+  width: 100%;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.input-group label {
+  color: #333;
+  /* outline: 1px solid red; */
+}
+
+.container .input-group input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.container .columns {
+  display: flex;
+  column-gap: 15px;
+}
+
+.gender-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.gender-box h4 {
+  color: #333;
+  font-weight: 350;
+  margin-bottom: 6px;
+}
+
+.gender-box input {
+  accent-color: rgb(130, 106, 240);
+}
+
+.adresses {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.adresses label {
+  color: #333;
+}
+
+.adresses input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.container .btn {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(130, 106, 240);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.container .btn:hover {
+  background-color: rgb(100, 86, 200);
+}
+
+.input-group:focus-within input {
+  border-color: rgb(130, 106, 240);
+}
+.adresses input[type="text"]:focus {
+  border-color: rgb(130, 106, 240);
+}
+
+@media screen and (max-width: 500px) {
+  .container .columns {
+    flex-wrap: wrap;
+  }
+}
