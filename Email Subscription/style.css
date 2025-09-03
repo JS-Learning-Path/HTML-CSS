@@ -11,12 +11,13 @@
 body {
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
-   background-image: linear-gradient(to right top, #051937, #063d51, #366163, #6c8478, #5a5c56);
+    background-image: linear-gradient(to right top, #051937, #063d51, #366163, #6c8478, #5a5c56);
 }
+
 .container {
     width: 500px;
     height: 450px;
-    border: 2px solid rgba(128, 128, 128, 0.495);
+    border: 2px solid #051937;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,14 +26,16 @@ body {
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
+
 h3 {
     margin-top: 50px;
 }
 
 .images {
     font-size: 100px;
-    color:#051937;
+    color: #051937;
 }
 
 .form-container {
@@ -55,6 +58,7 @@ input[type="text"] {
     text-align: center;
     font-size: 19px;
 }
+
 input[type="text"]:focus {
     outline: none;
     border: 1px solid #051937;
@@ -74,14 +78,17 @@ input[type="text"]:focus {
 .subscribe-button:hover {
     backdrop-filter: blur(50px);
     color: white;
+    background-color: #051937;
 }
 
 .container>p {
     padding: 10px;
     font-size: 18px;
+    font-weight: 500;
+
 }
 
 .container>p>a {
-    color: rgba(0, 0, 255, 0.6е62);
+    color: rgba(0, 0, 255, 0.6e62);
     text-decoration: none;
 }
