@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.footer {
+    background-color: #060e25;
+    position: absolute;
+    bottom: 0;  
+    width: 100%;
+    padding: 20px;
+    height: 35%;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+h3{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+.box p{
+    color: #fff;
+}
+.box .subscribe{
+    display: flex;
+    gap: 10px;
+}
+.box .subscribe input{
+    padding: 10px;
+    /* border: none; */
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #060e25;
+    border-color: purple;
+    border-width: 2px;
+}
