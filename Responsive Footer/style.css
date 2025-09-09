@@ -17,45 +17,92 @@ body {
 .footer {
     background-color: #060e25;
     position: absolute;
-    bottom: 0;  
+    bottom: 0;
     width: 100%;
     padding: 20px;
     height: 35%;
 }
+
 .box-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
-h3{
+
+h3 {
     color: #fff;
     font-size: 1.5rem;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+
+
 .box a {
     text-decoration: none;
     color: #fff;
     margin-top: 10px;
 }
-.box p{
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.box p {
     color: #fff;
 }
-.box .subscribe{
+
+.box .subscribe {
     display: flex;
     gap: 10px;
+    flex-direction: column;
 }
-.box .subscribe input{
+
+.box .subscribe input {
     padding: 10px;
-    /* border: none; */
+    width: 100%;
     outline: none;
     font-size: 1rem;
     border-radius: 5px;
     background-color: #060e25;
-    border-color: purple;
-    border-width: 2px;
+    border: 2px solid purple;
+}
+
+.box button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .box .subscribe {
+        flex-direction: column;
+    }
 }
