@@ -145,7 +145,11 @@ body.dark {
 
 .sidebar.close .toggle {
   transform: translateY(-50%) rotate(0deg);
+  right: -12px;
+  width: 24px;
+  height: 24px;
 }
+
 .sidebar.close .profession {
   opacity: 0;
 }
@@ -222,6 +226,10 @@ body.dark {
   background-color: var(--primary-color--light);
 }
 
+.sidebar.close .mode {
+  padding: 0 14px;
+}
+
 .menu-bar .mode i {
   position: absolute;
 }
@@ -247,6 +255,12 @@ body.dark {
   justify-content: center;
 }
 
+.sidebar.close .toggle-switch {
+  min-width: 30px;
+  width: 30px;
+  justify-content: center;
+}
+
 .toggle-switch .switch {
   position: relative;
   height: 20px;
@@ -254,6 +268,18 @@ body.dark {
   background-color: var(--toggle--color);
   transition: var(--tran-03);
   border-radius: 25px;
+}
+
+.sidebar.close .toggle-switch .switch {
+  width: 30px;
+  height: 16px;
+  display: none;
+}
+
+.sidebar.close .moon-sun .moon {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .switch::before {
@@ -272,6 +298,15 @@ body.dark {
 
 body.dark .switch::before {
   left: 22px;
+}
+
+.sidebar.close .switch::before {
+  width: 12px;
+  height: 12px;
+}
+
+.sidebar.close.dark .switch::before {
+  left: 16px;
 }
 
 .search-box input {
